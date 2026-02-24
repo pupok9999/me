@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pupok999 </title>
+	<link href="cyanobacteria.css" rel="stylesheet" type="text/css" media="all">
+	<link rel = "icon" href = "chest.gif">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<style>
+	
+	@font-face {
+    font-family: "Digital Clock";
+    src: url("digital-clock.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Megaten 20XX";
+    src: url("Megaten20XX.ttf") format("truetype"), url("Megaten 20XX.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+	/* start light mode styling */
+	:root {
+		--text: darkslategrey;
+		--border: lightgrey;
+		--accent: teal;
+		--bg: #dce3e1;
+		--gradientTop: white;
+		--gradientBottom: rgb(240, 248, 255, .8);
+	}
+	header {
+    background-size: cover;
+    background-position: center;
+}
+/* end light mode styling */
+
+
+
+* { 
+	box-sizing: border-box;
+}
+body {
+	padding: 10px;
+	color: var(--text);
+
+	/* page background pattern */
+	background-color: var(--gradientTop);
+	background-image:  linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg));
+	background-size: 20px 35px;
+	background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+p {
+font-size: 1.3em;
+}
+
+.container {
+	max-width: 55rem;
+	margin: 5vw auto 12px auto;
+	border: 6px ridge var(--border);
+	outline: 3px solid var(--gradientTop);
+	outline-offset: 4px;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	gap: 5px;
+
+	/* container background pattern */
+	background-color: var(--gradientBottom);
+	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--gradientBottom) 9px ), repeating-linear-gradient( var(--bg), var(--bg));
+}
+/* these control the column widths */
+.small { flex: 1 1 9%; }
+.large { flex: 1 1 82%; }
+.full { flex: 1 1 100%; }
+.half { flex: 1 1 49%; }
+
+
+header {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px; /* change banner height here*/
+	border: 2px ridge var(--border);
+	border-radius: 5px;
+	position: relative;
+}
+header span {
+	font-size: 29px;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	margin: 10px;
+	font-weight: bold;
+	text-shadow: 1px 1px var(--text),
+		-1px 1px var(--text),
+		1px -1px var(--accent),
+		-1px -1px var(--accent);
+	color: var(--gradientTop);
+}
+
+
+
+
+
+section {
+	border: 2px ridge var(--border);
+	border-radius: 5px;
+	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
+	padding: 5px;
+}
+
+
+footer {
+	text-align: center;
+	margin-bottom: 5vw;
+	font-size: 0.8rem;
+}
+footer a { 
+	text-decoration: none;
+}
+
+
+p  { 
+	margin: 5px;
+	line-height: 1.2;
+}
+
+
+.smt {
+  font-family: "Megaten 20XX";
+  transform: translateY(-120%)
+  }
+	
+
+img { max-width: 100%; }
+pre { overflow-x: auto; }
+
+
+a:hover, a:focus {
+	font-style: italic;
+}
+a:visited {
+	color: var(--accent);
+}
+
+input, ul.submenu {
+  display: none;
+}
+
+
+label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+
+input:checked~ul.submenu {
+  display: block;
+}
+
+.right {
+	float: right;
+	margin: 7px 0 0 5px;
+}
+
+.right span {
+	font-family: "Times New Roman";
+	display: block;
+    font-size: 12px;
+	opacity: 0.8;
+    font-style: bold;
+    color: var(--text);
+	text-align: center;
+}
+
+	</style>
+</head>
+<body>
+<audio autoplay loop preload="auto"> <source src="onmyway.mp3" type="audio/mpeg"></audio>
+	<div class="container">
+
+		<header>
+			<span class = "smt">pupok999</span>
+		</header>
+		
+	
+		
+		<section class="half">
+			<h1 style = "font-size: 1.5em; text-align: center; font-family: "Trebuchet MS";>get to know me!</h1>
+			<p>Привет! Меня зовут Нурбек, онлайн я обращаюсь к себе на pupok999/pupok/ppk. </p>
+			<br>
+			<div class = "right">
+<img src = "me.jpg" height = "150px" weight = "50px">
+<img src = "me2.jpg" height = "150px" weight = "50px">
+<span>это я!</span>
+</div>
+			<p>У меня не так много увлечений, чаще всего люблю заниматься веб-дизайном (как и вебдевом впринципе), ОБОЖАЮ эстетику интернета конца 90х - начала 2000х, старую технологию, а также иногда писать статьи на разные темы. </p>
+			<br>
+			<p>Я очень люблю видеоигры! Если вы хотите знать мои интересы, то взгляните на мои медиалисты и социальные сети!</p>
+			
+		</section>
+				
+		<section class="small">
+		(клик)
+<input id="check01" type="checkbox" name="menu" />
+<label for="check01">Медиа-листы:</label>
+<ul class = "submenu">
+<li><a href = "https://backloggd.com/u/pupok999">Backloggd</a></li>
+<li><a href = "https://anilist.co/user/pupok999/">Anilist</a></li>
+</ul>
+
+<input id="check01" type="checkbox" name="menu" />
+<label for="check01">Соц-сети:</label>
+<ul class = "submenu">
+<li><a href = "https://steamcommunity.com/id/pupok999/">Steam</a></li>
+<li><a href = "https://www.instagram.com/pupok99999/">Instagram</a></li>
+<li><a href = "https://t.me/Xx_NurbekHatesNiggers_xX">Telegram</a></li>
+</ul>
+<input id="check01" type="checkbox" name="menu" />
+<label for="check01">Веб-сайты: (лучше работают на ПК)</label>
+<ul class = "submenu">
+<li><a href = "https://his-corner.neocities.org">Его Уголок</a>(статьи)</li>
+<li><a href = "https://pupok999.nekoweb.org">Пуповиня</a>(в ОЧЕНЬ сыром состоянии)</li>
+</ul>
+		</section>
+		
+
+		
+		<section class="half">
+		<p style = "text-align: center; font-family: 	 'MS PGothic', sans-serif;">если вы это видите, то спасибо за внимание.</p>
+		<p style = "text-align: center; font-family: 	 'MS PGothic', sans-serif;"><img src = "ani_link_spin.gif"</p>
+		</section>
+		
+	</div>
+
+	<footer>
+		<span>cyanobacteria.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></span>
+	</footer>
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const banners = [
+        "banner.png",
+        "banner2.jpg",
+        "banner3.png",
+        "banner4.png",
+		"banner5.jpg"
+    ];
+
+    const randomBanner = banners[Math.floor(Math.random() * banners.length)];
+
+   document.querySelector("header").style.backgroundImage =
+    "url('" + randomBanner + "?v=" + Math.random() + "')";
+});
+</script>
+</html>
